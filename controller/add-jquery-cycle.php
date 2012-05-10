@@ -14,7 +14,7 @@ add_action('wp_enqueue_scripts', 'my_jquery_register');
 
 function my_jquery_cycle_register() {
     wp_deregister_script( 'jquery-cycle' );
-    wp_register_script( 'jquery-cycle', 'http://malsup.github.com/jquery.cycle.all.js');
+    wp_register_script( 'jquery-cycle', WP_PLUGIN_URL . '/view/js/jquery.cycle.all.js');
     wp_enqueue_script( 'jquery-cycle' );
 }    
 add_action('wp_enqueue_scripts', 'my_jquery_cycle_register');

@@ -8,7 +8,8 @@ Version: 1.0
 */
 ini_set("memory_limit","256M");
 
-require_once('simple_html_dom.php');
+require_once('controller/init.php');
+require_once('library/simple_html_dom.php');
 
 
 // Debug stuffs
@@ -23,9 +24,9 @@ function dbgprnt($text="", $level=10) {
 }
 
 
-require_once('include/settings.php');
-require_once('include/add-jquery-cycle.php');
-require_once('include/new-message-robot.php');
+require_once('view/settings.php');
+require_once('controller/add-jquery-cycle.php');
+require_once('controller/new-message-robot.php');
 
 
 
